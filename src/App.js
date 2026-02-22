@@ -20,6 +20,7 @@ function App() {
     <ul>
       {
         count.map((task )=>(
+        
           <li key={task.id}>
            
             <span>{task.id}</span>
@@ -28,10 +29,12 @@ function App() {
              
              <button onClick={()=> delCounter(task.id)}>delete</button>
           </li>
+          
         ))
       }
     </ul>
    </div>
+
   );
 }
 
